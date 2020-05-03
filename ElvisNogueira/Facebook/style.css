@@ -1,0 +1,279 @@
+@font-face{
+    font-family: klavika;
+
+    /*Caso a fonte esteja na mesma pasta*/
+    src: url("fonte/klavika-bold-bold-1.otf");
+}
+
+
+
+
+header{
+    background-color: #3b5998;
+    height: 80px;
+    width: 100%;
+}
+
+
+#logo{
+    color: white;
+    font-weight: bold;
+    font-family: klavika;
+}
+
+#entrarLogin{
+    background-color: #4267b2;
+    color: white;
+    border: solid 1px rgb(58, 58, 58);
+}
+
+@media only screen and (min-width: 500px){
+    body{
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        height: 100%;
+        /*background: -webkit-gradient(linear, left top, left top, from(white), to(#D9DDEB));*/
+        background-image: linear-gradient(to top, #D9DDEB,white);
+
+        
+    }
+    header{
+        height: 80px;
+    }
+
+    label{
+        color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: 10pt;
+    }
+
+    footer{
+        clear: both;
+        background-color: white;
+        height: 150px;
+    }
+    
+    ul{
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+        margin-top: 10px;
+    }
+
+    li{
+        list-style-type: none;
+        display: inline;
+        padding: 5px;
+        color: #666;        
+        font-family: Helvetica, sans-serif;
+        font-size: 10pt;
+    }
+
+    li p{
+        color: #666;
+    }
+
+    hr{
+        margin-left: auto;
+        margin-right: auto;
+        width: 910px;
+    }
+
+    #logo{        
+        font-size: 45px;
+        padding-left: 180px;
+        padding-top: 24px;
+    }
+
+    #login{
+        position: absolute;
+        right: 12%;
+        top: 20px;
+        width: 31%;
+        min-width: 297px;
+        max-height: 56px;
+    }
+    #labelSenha{
+        padding-left: 65px;
+        
+    }
+
+    #labelLogin{
+        font-size: 9pt;
+    }
+
+    #entrarLogin{
+        height: 23px;
+    }
+
+    #recuperarSenha{
+        font-size: 10pt;
+        font-family: Helvetica, sans-serif;
+        text-decoration: none;
+        color: #9cb4d8;
+        float: right;
+        margin-right: 141px;
+        
+    }
+
+
+
+    #mapaDiv{
+        float: left;
+        width: 45%;
+    }
+
+    #mapaImg{
+        margin-top: 10px;
+        margin-left: 0%;
+    }
+
+    #texto{
+        width: 450px;
+        font-family: Helvetica, sans-serif;
+        font-size: 10pt;
+        float: left;
+        padding-left: 150px;
+        padding-top: 20px;
+    }
+
+    #cadastro{
+        float: right;
+        top: 20px;
+        font-family: Helvetica, sans-serif;
+        font-size: 14pt;
+        width: 35%;
+        margin-right: 130px;
+        margin-top: 0px;
+        
+    }
+
+    #tituloCad{    
+        font-size: 36px;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    #corpo{
+        float: left;
+        width: 100%;
+        max-height: 601px;
+    }
+
+    #sessaoCad{
+        color: gray;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+
+    .loginCampo{
+        width: 35%;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    .campoDiv{
+        width: 45%;
+    }
+
+    .cadastroCampo{
+        height: 35px;
+        border-radius: 5px;
+        border: solid 1px gray;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        font-size: 12pt;
+        text-indent: 10px;
+    }
+
+    .campoUnico{
+        width: 93%;
+    }
+
+    .dataNasc{
+        width: 13%;
+        height: 35px;
+        text-align-last: center;
+    }
+
+    #sexoCad{
+        font-family: Helvetica, sans-serif;
+        color: black;
+        font-size: 14pt;
+    }
+
+    #letrasP{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 8pt;
+        color: #666;
+    }
+
+
+    a{
+        color: #385898;
+        text-decoration: none;
+    }
+
+    #cadastrar{
+        background-image: linear-gradient(#67ae55, #578843);
+        border: none;
+        color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: 14pt;
+        height: 35px;
+        width: 45%;
+        border-radius: 5px;
+    }
+
+    .textoPagOfic{
+        color: #666;
+        font-family: Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .textoPagOfic a{
+        color: #385898;
+        text-decoration: none;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    header{
+        height: 40px;
+    }
+
+    #logo{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    /*
+    .loginCampo{
+        width: 95%;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #f5f6f7;
+        border: solid 1px gray;    
+    }
+    */
+
+}
