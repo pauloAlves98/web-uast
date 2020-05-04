@@ -13,6 +13,11 @@ header{
     width: 100%;
 }
 
+a{
+    color: #385898;
+    text-decoration: none;
+}
+
 
 #logo{
     color: white;
@@ -210,10 +215,7 @@ header{
     }
 
 
-    a{
-        color: #385898;
-        text-decoration: none;
-    }
+    
 
     #cadastrar{
         background-image: linear-gradient(#67ae55, #578843);
@@ -359,11 +361,57 @@ header{
 
     }
 
-    hr{
-        width: 10%;
+    #novaConta{
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: auto;
+        width: 60%;
+        height: 44px;
+        border-radius: 5px;
+        color: white;
+        background-color: #00a400;
+        font-weight: bold;
     }
 
+    #senhaRecup{
+        position: absolute;
+        margin-left: 30%;
+    }
 
+    #footerMob{
+        margin-top: 50px;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footerMob p{
+        margin-top: 20px;
+        color: #666;
+        text-align: center;
+        margin-left: auto;
+        margin-left: auto;
+    }
+
+    li{
+        list-style: none;
+        color: #666;
+    }
+
+    #listaD{
+        width: 45%;
+        float: left;
+        margin: 0px;
+        text-align: center;
+    }
+    #listaE{
+        width: 45%;
+        float: right;
+        margin: 0px;
+        text-align: center;
+    }
+
+    
     
 
     /*
