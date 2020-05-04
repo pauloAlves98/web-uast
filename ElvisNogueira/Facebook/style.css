@@ -266,6 +266,18 @@ header{
         padding-top: 10px;
     }
 
+
+    #contentMsgMob{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    span{
+        margin: auto;
+        float: right;
+        width: 320px;
+    }
+
     /*
     .loginCampo{
         width: 95%;
