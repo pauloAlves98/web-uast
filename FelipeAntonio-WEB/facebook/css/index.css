@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Niramit:wght@700&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(#4e69a2, #3b5998);
+    width: 100%;
+    height: 81px;
+    border-bottom: 1px solid #353131;
+}
+
+h1{
+    font-family: 'Niramit', sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 42px;
+    top: -20px;
+    left: 175px;
+}
+.login{
+    position: absolute;
+    right: 120px;
+    width: 41%;
+    height: 83px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.login .box{
+    float: left;
+    padding: 10px;
+    padding-top: 12px;
+}
+.login .box label{
+    position: absolute;
+    top: 14px;
+    color: white;
+    font-size: 14px;
+}
+
+
+.login .box a{
+    position: absolute;
+    bottom: 10px;
+    right: 198px;
+    color: #dcd8d8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login .box button{
+    background-color: #4267b2;
+    color: white;
+    border: 1px solid #29487d;
+    height: 23px;
+}
+
+main{
+    background-color: #e9ebee;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    top: 0px;
+}
+
+.container{
+    position: absolute;
+    right: 232px;
+}
+
+.container h2{
+    font-size: 45px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+.container p{
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    position: relative;
+    top: -42px;
+    left: 0px;
+    letter-spacing: normal;
+}
+
+.container input{
+    height: 36px;
+    width: 217px;
+    border: 1px solid #ccc8c8;
+    border-radius: 5px;
+    margin: 4px;
+    text-indent: 10px;
+    font-size: 20px;
+}
+.container form div input{
+    float: left; 
+}
+
+
+.container .cadastro-dados{
+    position: absolute;
+    top: 133px;
+    right: -41px;
+    width: 111%;
+}
+.login-mini{
+    position: absolute;
+    left: 40px;
+    top: 93px;
+}
+
+.login-mini button{
+    width: 100%;
+    height: 30px;
+}
+
+.login-mini input{
+    width: 300px;
+    height: 44px;
+    margin-bottom: -5px;
+}
+
+.container input:nth-child(3),.container input:nth-child(2){
+    width: 98%;
+}
+
+.container div input:nth-child(2){
+    width: 217px;
+}
+
+select{
+    height: 30px;
+    position: relative;
+    top: 13px;
+    margin-bottom: -8px;
+    width: 72px;
+}
+.etinia{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    position: relative;
+    left: 0px;
+    letter-spacing: normal;
+}
+.cadastro-dados .nasc #d{
+    font-size: 19px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #908d8d;
+    position: relative;
+    left: 4px;
+    top: 10px;
+    letter-spacing: normal;
+}
+
+.data{
+    position: relative;
+    left: 5px;
+}
+
+#dia{
+    width: 60px;
+}
+.genero input{
+    height: 19px;
+    width: 13px;
+    padding-right: 10px;
+}
+.genero label{
+    position: relative;
+    /* left: -202px; */
+    top: 4px;
+    /* padding-right: 48px;*/
+}
+.genero div{
+    float: left;
+    position: relative;
+    left: 6px;
+    padding-right: 14px;
+}
+
+.genero{
+    margin-top: 8px;
+}
+.cadastro-dados label{
+    font-size: 19px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #908d8d;
+    position: relative;
+    left: 4px;
+    top: 10px;
+    letter-spacing: normal;  
+}
+.info a{
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+}
+.info{
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    bottom: -66px;
+    font-weight: 400;
+    color: #6f6e6e;
+    left: 4px;
+    font-size: 12px;
+}
+.info2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #6f6e6e;
+    /* padding-top: 14px; */
+    /* margin-top: 12px; */
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    border-top: 1px solid #c1bbbb;
+    bottom: -418px;
+}
+
+.info2 a{
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none; 
+    padding-right: 3px; 
+}
+
+#cadastro{    position: absolute;
+    bottom: -129px;
+    height: 42px;
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid rgb(179, 172, 172);
+    left: 4px;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+}
+
+@media only screen and (max-width:360px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        background: linear-gradient(#4e69a2, #3b5998);
+        width: 110%;
+        height: 81px;
+        border-bottom: 1px solid #353131;
+    }
+
+    .login{
+        visibility: hidden;
+    }
+
+    h1{
+        font-family: 'Niramit', sans-serif;
+        color: white;
+        left: 106px;
+        top: -27px;
+    }
+
+    main{
+        width: 110%;
+    }
+
+    .container h2{
+        visibility: hidden;
+    }
+    .cadastro-dados{
+        visibility: hidden;
+    }
+}
