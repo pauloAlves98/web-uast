@@ -2,11 +2,10 @@ var segundos = 0;
 var minutos = 0;
 var hora = 0;
 var tempo = document.getElementById('tempo');
+var acao = document.getElementById('play');
 var intervalo;
 
 function iniciarParar(){
-    
-    var acao = document.getElementById('play');
     if(acao.innerText == "Iniciar"){
         acao.innerText = "Pausar";
         acao.style.border = "solid 1px yellow"
@@ -21,8 +20,11 @@ function iniciarParar(){
 }
 
 function parar(){
+    acao.innerText = "Iniciar";
+    acao.style.border = "solid 1px green"
+    acao.style.color = "green"
     clearInterval(intervalo);
-    tempo.innerText = "00:00:00"
+    tempo.innerText = "00:00:00";;
 }
 
 function contar(){
