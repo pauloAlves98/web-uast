@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+    background-color: #141525;    
+    font-family: Helvetica, sans-serif;
+    
+    text-align: center;
+}
+
+h1{
+    padding: 50px;
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 90px;
+}
+
+button{
+    margin: 50px;
+    background-color: #141525;
+    color: white;    
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+}
+
+#play{
+    border: solid 1px green;
+    color: green;
+}
+
+#stop{
+    border: solid 1px red;
+    color: red;
+}
