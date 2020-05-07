@@ -8,7 +8,6 @@ body{
     background-color: #141525;    
     font-family: Helvetica, sans-serif;    
     text-align: center;
-    min-width: 380px;
 }
 
 #play{
@@ -35,6 +34,10 @@ button{
 }
 
 @media only screen and  (min-width: 500px){ 
+    body{
+        min-width: 360px;
+    }
+
     p{        
         font-size: 90px;
     }
