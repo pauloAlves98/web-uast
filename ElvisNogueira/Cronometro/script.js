@@ -5,7 +5,7 @@ var tempo = document.getElementById('tempo');
 var acao = document.getElementById('play');
 var intervalo;
 
-function iniciarParar(){
+function iniciarPausar(){
     if(acao.innerText == "Iniciar"){
         acao.innerText = "Pausar";
         acao.style.border = "solid 1px yellow"
