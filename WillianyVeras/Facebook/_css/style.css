@@ -1,0 +1,317 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: Helvetica, Arial, sans-serif;    
+}
+
+/* CELULAR */
+@media only screen and (max-width: 649px){
+    
+    .celular-tablet{
+        display: block;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    header{
+        background-color: #385898;
+        padding: 10px ;       
+    }
+    
+    /* header */
+    #logo{
+        text-align: center;
+    }
+    #logo a{        
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration:none;
+        color: white;
+        
+    }
+
+    /* body */
+    .back-branco{
+        background: white;
+        /* min-height: 630px; */
+    }
+
+    form {
+        margin: 30px;
+    }
+
+    form input{
+        width: 100%;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccd0d5;
+        font-size: 16px;
+        background: #f5f6f7;
+        padding: 8px 0;
+    }
+
+    form p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    p a{
+        color: #9cb4d8;
+    }
+
+    form button{
+        border-radius: 4px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #btn-entrar{
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 10px;
+        background-color: #1877f2;
+        border: 1px solid #1877f2;
+    }
+    #btn{text-align: center;}
+    #btn-criar-conta{
+        padding: 10px 20px;
+        background-color: #00A400;
+        border: 1px solid #00A400;
+    }
+
+
+    /* footer */
+     p{
+        text-align: center;      
+        color: #737373;
+    }
+}
+
+
+/* PC MAX*/
+@media only screen and (min-width: 650px){
+
+    .celular-tablet{
+        display: none;
+    }
+
+    .pc{
+        display: block;
+    }
+
+    header{
+        background-color: #385898;
+        padding: 10px ;       
+    }
+        
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        display: inline-block;
+        
+    }
+
+    li a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #385898;
+        padding: 5px 10px;
+        
+    }
+
+    li a:hover{
+        text-decoration: underline;
+    }
+
+    li button{
+        font-weight: bold; 
+        font-size: 15px;
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+    .centralizar{
+        width:80%;
+        margin:10px auto;
+    }
+
+    #logo a{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration:none;
+        color: white;
+        float: left;
+        margin-top: 6px;
+    }
+
+    #logo{
+        clear: both;
+    }
+
+    #form-login{
+        font-size: 12px;
+        color: white;
+        float: right;   
+    }
+
+    #form-login .itens{
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    #form-login button{
+        color: white;
+        font-weight: bold;
+        background-color: #4267B2;
+        border: 1px solid #1c507a;
+        padding: 2px 6px;
+    }
+
+    #form-login button:hover{
+        background-color: #385898;
+    }
+
+    #esqueceu-senha a{
+        float: right;
+        font-size: 12px;
+        color: #9cb4d8;
+        text-decoration: none;
+        margin-right: 137px;
+    }
+
+    #esqueceu-senha a:hover{
+        text-decoration: underline;
+    }
+
+    .back-gradiente{
+        background: linear-gradient(white, #D3D8E8);
+        min-height: 630px;
+        
+    }
+
+    #janela-1{
+        margin-top: 40px;
+        width: 50%;
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        line-height:29px;
+        color: #0e385f;
+        clear: both;  
+    }
+
+    #janela-1 img{
+        width: 100%;
+    }
+
+    #janela-2{
+        margin-top: 10px;
+        width: 45%;
+        float: right;  
+    }
+
+    #janela-2 h1{
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    #janela-2 h2{
+        margin-top: 0;
+        font-size: 19px;
+        font-weight: 500;
+        color: #1c1e21;
+    }
+
+    #copy{
+        font-size: 11px;
+        color: #737373;
+        margin-left: 10px;
+    }
+
+    #btn-cadastrar{
+        color: white;
+        font-size: 19px;
+        font-weight: bold;
+        background-color: #578843;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: 1px solid #2c5115;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #btn-cadastrar:hover{    
+        background-color: #67ae55;
+    }
+
+    #termos-e-condicoes{
+        font-size: 11px;
+        color: #777777;
+        margin-top: 20px;
+    }
+
+    .abertura-links{
+        color:  #0e385f;
+    }
+    .abertura-links:hover{
+        text-decoration: underline;
+    }
+
+    #criar-pagina{
+        font-size: 13px;
+        font-weight: bold;
+        color: #666666;   
+    }
+
+    .superior input{
+        border: 1px solid #ccd0d5;
+        border-radius: 8px;
+        padding: 8px 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .superior #nome{
+        margin-right: 10px;
+    }
+
+    .superior #login, 
+    .superior #senha{
+        width: 94%;    
+    }
+
+    .inferior {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .inferior #dn{
+        color: black;
+        font-size: 16px;
+    }
+    .titulo{
+        color: #90949c;
+        font-weight: bold;
+        font-size: 16px;
+        
+    }
+}
+
+/* 
+header{
+    background-color: #385898;
+    padding: 10px ;       
+} */
