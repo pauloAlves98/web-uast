@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <div class="stopWatch-block">
+        <div class="stopWatch">
+            <table>
+                <thead>
+                    <tr>
+                        <th>HOURS</th>
+                        <th></th>
+                        <th>MINUTES</th>
+                        <th></th>
+                        <th>SECONDS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="hour">00</span></td>
+                        <td><span>:</span></td>
+                        <td><span id="min">00</span></td>
+                        <td><span>:</span></td>
+                        <td><span id="sec">00</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="buttons-block">
+            <span  class="buttons">
+                <button onclick="start()" class="buttons-self"  id="start" type="submit">start</button>
+                <button onclick="clearIt()" class="buttons-self" id="clear" type="submit">clear</button>
+            </span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
