@@ -5,7 +5,7 @@ var tempo = document.getElementById('tempo');
 var acao = document.getElementById('play');
 var intervalo;
 
-function iniciarParar(){
+function iniciarPausar(){
     if(acao.innerText == "Iniciar"){
         acao.innerText = "Pausar";
         acao.style.border = "solid 1px yellow"
@@ -24,7 +24,11 @@ function parar(){
     acao.style.border = "solid 1px green"
     acao.style.color = "green"
     clearInterval(intervalo);
-    tempo.innerText = "00:00:00";;
+    tempo.innerText = "00:00:00";
+
+    segundos = 0;
+    minutos = 0;
+    hora = 0;
 }
 
 function contar(){
