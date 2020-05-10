@@ -5,10 +5,8 @@ html, body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-div{
-    text-align: center;
-    margin-top: 10%;
-}
+
+
 p{
     color: white;
     font-weight: 600;
@@ -16,19 +14,36 @@ p{
 }
 
 h1{
+    
     font-size: 130px;
     color: #a64aff;
     margin: 0;
     padding: 0;    
 }
-
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container div{
+    text-align: center;
+    width: 450px;
+    height: 260px;
+}
 .btn{
     font-size: 40px;
     color: #a64aff;
     background: none;
-    border: 1px solid #a64aff;
+    border: 2px solid #a64aff;
     border-radius: 10%;
     cursor: pointer;
     padding: 5px 10px;
     margin: 0;
+}
+
+.btn:focus{
+    outline: 0;
 }
