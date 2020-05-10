@@ -1,0 +1,136 @@
+*{
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;  
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+
+    background-color: #3b5998;
+    width: auto;
+    height: 83px;
+
+}
+div.logo{
+    float: left;
+    color: white;
+  
+    width: 450px;
+    height: 83px;
+    padding: 10px;
+    margin-top: 15px;
+}
+.logo h2{
+    margin-left: 259px;
+    font: bold;
+    font-size: 40px;
+    }
+
+
+form.form-login{
+    float: right;
+  margin-right: 285px;
+
+}
+.form-login .form-elementos{
+    display: inline-block;
+    margin-top: 14px;
+    margin-right: 10px;
+   
+  
+}
+.form-elementos p{
+ color: white;
+ font-size: 12px;
+}
+
+.form-elementos input[type=email],
+.form-elementos input[type=password]{
+    
+    margin-top: 4px;
+    height: 23px;
+
+}
+
+#esquecer_senha{
+color: whitesmoke;
+   font-size: 12px;
+   margin-top: 5px;
+   margin-left: 165px;
+
+}
+
+.form-elementos input[type=submit]{
+    cursor: pointer;
+    border: 2px solid #3b65c0;
+    background-color:#3b65c0;
+    color: white;
+    font: bold;
+
+}
+.main{
+    
+    background: linear-gradient(white, #d3d8e8);
+ 
+   height: 550px;
+   
+   
+}
+#mensagem{
+    color: darkblue;
+    font-size: 21px;
+    font: bold;
+    margin-left: 270px;
+    margin-top: 40px;
+}
+
+#img{
+    margin-left: 272px;
+    margin-top: 18px;
+}
+
+.abrir-conta{
+    float: right;
+    margin-bottom: 100px;
+    width:  40%;
+    background-color:royalblue
+    
+    }
+    .abrir-conta h2{
+        color: black;
+        font-size: 35px;
+    }
+    
+    .abrir-conta h3{
+        font-size:  19px;
+        color: black;
+        margin-top: 8px;
+        font-weight:  normal;
+    }
+    form.criar-conta{
+        margin-top: 10 px;
+    }
+    .w50{
+        width:  50%;
+        padding: 0 5px;
+        float: left;
+    }
+    .w100{
+        width:  100%;
+        padding: 0 5px;
+        float: left;
+    }
+     form.criar-conta input{
+         width: 100%;
+         margin-top: 8px;
+     }
+     form.criar-conta input[type=email],
+     form.criar-conta input[type=text],
+     form.criar-conta input[type=password]{
+         height:  40px;
+         padding-left:10px;
+         font-size: 20px;
+         border: 1px solid #a5dcff;
+         border-radius: 8px;
+     }
