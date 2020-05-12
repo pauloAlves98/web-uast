@@ -9,7 +9,11 @@ function rodando(){
        clearInterval(intervalo);
        intervalo = null;
        document.getElementById("iniciarpausar").innerText = "Iniciar";
+       document.getElementById("iniciarpausar").style.color = "rgb(7, 162, 189)";
+       document.getElementById("iniciarpausar").style.border= "2px solid  rgb(7, 162, 189)";
     }else{//iniciou
+        document.getElementById("iniciarpausar").style.color = "red";
+        document.getElementById("iniciarpausar").style.border= "2px solid  red";
         intervalo = setInterval(function (){incrementaRelogio()},1000);
         document.getElementById("iniciarpausar").innerText = "Pausar";
     }
