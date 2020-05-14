@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Image</title>
+</head>
+<body>
+    <h1>EXECICIO LOAD IMAGE COM AJAX</h1>
+    <input onchange="enviar()" type="file" name="imagem" id="imagem">
+    <img id="upload" src="">
+    <script>
+      var img = document.getElementById("upload");
+      var file = document.getElementById("imagem");
+      var form = new FormData();
+      var ajax = new XMLHttpRequest();
+
+      ajax.onreadystatechange = function(e){
+        if(ajax.readyState===4 && ajax.status == 200){//cod 4 tudo certo, 200 servidor ok!
+            img.src = ajax.responseText;
+        }
+      } 
+
+      function enviar(){
+        form.append("imagem",file.files[0]);//captura o unico arquivo selecionado no input.
+        ajax.open("POST","receber.php")//configura a requisição!
+        ajax.send(form);//envia o formulario.
+      }
+
+    </script>
+</body>
+</html>
