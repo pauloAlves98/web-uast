@@ -32,3 +32,21 @@ button{
     background-color: black;
     border:2px solid  rgb(7, 162, 189);
 }
+@media only screen and (max-width:700px){
+    #relogio{
+        font-size: 90px;
+    }
+    button{
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    .extra{
+        font-size:12px;
+    }
+}
+@media only screen and (max-width:400px){
+    #relogio{
+        font-size: 50px;
+    }
+}
+ 
