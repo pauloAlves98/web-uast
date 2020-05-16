@@ -9,14 +9,18 @@
 <body>
     <h1 >
         <!-- importar font externa  -->
-        CLIMA
+        <!-- https://api.openweathermap.org/data/2.5/weather?q=Princesa%20Isabel&APPID=05e9cd67c1f8e393a887ed268d0112fd&units=metric -->
+        C l i m a
     </h1>
     <ul>
         <li>
-            <input id="linput" type="text" name="busca">
+            <input id="linput" type="text" placeholder="Digite o nome da cidade" name="busca">
         </li><li>
-            <button class="lbutton">Buscar</button>
+            <button onclick="buscar();"class="lbutton">B u s c a r</button>
         </li>
+        
     </ul>
+    <p id="resultado">Resultado</p>
+    <script src="script.js"></script>
 </body>
 </html>

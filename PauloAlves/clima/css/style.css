@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 *{
     margin: 0px;
 }
@@ -15,8 +17,9 @@ body{
     text-align: center;
 }
 h1{
-    font-size:60px;
-    margin-bottom: 40px;
+    font-family:'Pacifico', cursive;
+    font-size:80px;
+    margin-bottom: 20px;
     color: #B22222;
     font-weight: bold;
     text-shadow: 0 1px 0 #cccccc, 
@@ -62,6 +65,7 @@ li{
     height:100%;
 }
 .lbutton{
+    font-family: 'Pacifico';
     font-weight: 800;
     color:white;
     border-radius: 0px 90px 90px 0px;
@@ -76,10 +80,34 @@ button:focus {
     outline: none;
     background-color:rgb(209, 21, 21);
 }
-button:exited{ 
-    outline: none;
-    background-color:#B22222;
-}
 input:focus { 
     outline: none;
+}
+#resultado{
+    margin-top: 40px;
+    font-family:'Pacifico', cursive;
+    font-size:50px;
+}
+
+@media only screen and (max-width:770px){
+    #resultado{
+        font-size:40px;
+    }
+    h1{
+        font-size: 70px;
+    }
+    #linput{
+        width: 400px;
+    }
+}
+@media only screen and (max-width:570px){
+    #resultado{
+        font-size:30px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    #linput{
+        width: 200px;
+    }
 }
