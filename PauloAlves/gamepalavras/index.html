@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Game Palavras</title>
+</head>
+<body>
+    <button id='iniciar'>Iniciar</button>
+    <div>
+        <label>Tempo:</label><label>15s</label>
+        <label>Palavras restantes:</label><label id='restante'>10</label>
+        <input id="verpalavra" type="text">
+        <input id="digitarpalavra" type="text" placeholder="Digite a palavra aqui">
+    </div>
+   <script>
+    var palavras = [];
+    var tempo = null;   
+
+    $(function(){
+        $("#verpalavra").attr("disabled", true)
+        $("#digitarpalavra").on("keyup",function(){
+            if($("#digitarpalavra").val().toUpperCase()===palavras[0].toUpperCase()){//verifica se foi digitado correto
+                alert("Igual");
+                palavras. splice(0, 1);//remove o item
+                $("#verpalavra").val(palavras[0])
+                $("#digitarpalavra").val("")
+                $("#restante").text(palavras.length.toString())
+            }
+        })
+        $("#iniciar").on("click",function(){
+            buscarpalavras(8);
+        });
+        function buscarpalavras(qnt){
+            $.ajax({
+             method:'GET',
+             url:'https://cors-anywhere.herokuapp.com/https://gerador-nomes.herokuapp.com/nomes/'+qnt.toString(),
+             success:function(data,textStatus){
+                palavras = data;
+                console.log(palavras)
+                $("#verpalavra").val(palavras[0])
+             }
+         }).fail(function(jqXHR, textStatus, msg){
+                 alert("Error "+msg);
+         }); 
+        }
+        // $.get("https://gerador-nomes.herokuapp.com/nomes/45",function(data,status){
+        //     alert("Data: " + data + "\nStatus: " + status);
+        // });
+    })
+   
+   
+   </script>
+</body>
+</html>
