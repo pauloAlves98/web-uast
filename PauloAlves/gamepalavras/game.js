@@ -5,9 +5,9 @@
     var QUANTPALAVRAS = 5;  
 
     $(function(){
-        $("#verpalavra").attr("disabled", true)
+        $("#verpalavra").attr("disabled", true)//desabilita a digitação no input
 
-        $("#digitarpalavra").on("keyup",function(){
+        $("#digitarpalavra").on("keyup",function(){//checagem ao clicar no input de digitação
             if(palavras.length>0 && $("#digitarpalavra").val().toUpperCase()===palavras[0].toUpperCase()){//verifica se foi digitado correto
                 $("#resultado").text("Correto");
                 $("#resultado").show();
@@ -19,7 +19,7 @@
             }
         })
 
-        $("#iniciar").on("click",function(){
+        $("#iniciar").on("click",function(){//botão de inicio
             reset();
             buscarpalavras(QUANTPALAVRAS);
         });
@@ -33,6 +33,8 @@
                 alert("Tente Novamente: Nivel alcançado: "+nivel)
                 clearInterval(tempo)
                 reset();
+                $("#iniciar").show()
+                $("#panelgame").hide()
                 console.log("Condicao 2")
             }
             else{
@@ -40,15 +42,18 @@
                 console.log("Condicao 3")
             }
         }
-        function buscarpalavras(qnt){
+        function buscarpalavras(qnt){//consulta a api
             $.ajax({
              method:'GET',
              url:'https://cors-anywhere.herokuapp.com/https://gerador-nomes.herokuapp.com/nomes/'+qnt.toString(),//api
-             success:function(data,textStatus){
+             success:function(data,textStatus){//caso a consulta seja feita com sucesso.
                 palavras = data;
                 console.log(palavras)
+                $("#iniciar").hide()
+                $("#panelgame").show();
                 $("#verpalavra").val(palavras[0])
                 $("#restante").text(palavras.length.toString())
+                $("#panelgame")
                 if(tempo!=null)
                     clearInterval(tempo);
                 tempo = setInterval(function(){
@@ -66,8 +71,8 @@
            setTempo();
         }
 
-        function setTempo(){
-            $('#cronometro').text(ntempo.toString()+"s")   
+        function setTempo(){//atualiza o tempo na tela.
+            $('#cronometro').text(ntempo.toString()+"  s")   
             // if(ntempo==0)
             //     clearInterval(tempo)    
         }
@@ -78,20 +83,20 @@
             tempo = null;
             ntempo = 30;
             QUANTPALAVRAS = 5;
-            $('#cronometro').text(ntempo.toString()+"s");
-            $("#verpalavra").val("");
+            $('#cronometro').text(ntempo.toString()+" s");
+            $("#verpalavra").val("Aguarde...");
             $("#restante").text(palavras.length.toString())
             $("#digitarpalavra").val("")
             
         }
-        function proxnivel(){//passar incremento
+        function proxnivel(){
             nivel += 1;
             palavras = []
             tempo=null;
             ntempo = 30;
-            QUANTPALAVRAS = 5+nivel;
+            QUANTPALAVRAS = 5+nivel;//as palavras aumentam de acordo o nível.
             $('#cronometro').text(ntempo.toString()+"s");
-            $("#verpalavra").val("");
+            $("#verpalavra").val("Aguarde...");
             $("#restante").text(palavras.length.toString())
             $("#digitarpalavra").val("")
             buscarpalavras( QUANTPALAVRAS );
